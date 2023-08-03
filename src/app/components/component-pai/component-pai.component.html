@@ -1,0 +1,10 @@
+<h1>Testando @Input e o @Output</h1>
+
+<app-component-filho [child]="'Primeiro componente filho'" (clickFilho)="eventoFilho()"></app-component-filho>
+
+<app-component-filho [child]="'Segundo componente filho'" (clickFilho)="eventoFilho()"></app-component-filho>
+
+<hr />
+
+<p> Botão do componente pai:</p>
+<button (click)="botaoPai()">Aperte para verificar quantos componente children tenho</button>
